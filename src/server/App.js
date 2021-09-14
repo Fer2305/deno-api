@@ -1,6 +1,5 @@
-import Depent from "../../depent.js";
-
-const { Application } = Depent;
+import { Application } from "../dependencies/oak.js";
+import { ApplicationRouter } from "../routes/routes.js";
 
 const start = async (host, port) => {
   const app = new Application();
@@ -12,9 +11,7 @@ const start = async (host, port) => {
 };
 
 const initMiddlewares = (app) => {
-  app.use((ctx) => {
-    ctx.response.body = "Hello World from Deno!";
-  });
+  app.use(ApplicationRouter.routes());
 };
 
 export default start;

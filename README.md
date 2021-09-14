@@ -10,6 +10,8 @@
 
 ## Modules that we used in this project:
 
+The external modules are located at src/dependencies
+
 - [oak](https://deno.land/x/oak@v9.0.0)
 - [dotenv](https://deno.land/x/dotenv@v3.0.0)
 
