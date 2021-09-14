@@ -32,8 +32,6 @@ The external modules are located at src/dependencies
     ```
 ## To do
 
-- Add "real" db connection values
-- Create applications table into db and some registers
 - Build each service function for each repository function
 - Build each controller function for each service function
 - Build each route for each controller function
