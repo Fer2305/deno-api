@@ -1,5 +1,4 @@
-import { opine } from "https://deno.land/x/opine@1.7.2/mod.ts";
-
+import { Application } from "https://deno.land/x/oak/mod.ts";
 export default {
-    opine,
-}
+  Application,
+};
