@@ -1,2 +1,2 @@
-import start from "./server/App.js";
+import start from "./App.js";
 start("http://localhost", 3000);

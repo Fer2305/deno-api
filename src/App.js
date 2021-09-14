@@ -1,5 +1,5 @@
-import { Application } from "../dependencies/oak.js";
-import { ApplicationRouter } from "../routes/routes.js";
+import { Application } from "./dependencies/oak.js";
+import { ApplicationRouter } from "./routes/routes.js";
 
 const start = async (host, port) => {
   const app = new Application();
@@ -12,6 +12,9 @@ const start = async (host, port) => {
 
 const initMiddlewares = (app) => {
   app.use(ApplicationRouter.routes());
+  app.use((ctx) => {
+    ctx.response.body = { message: "Deno REST API is running!" };
+  });
 };
 
 export default start;
