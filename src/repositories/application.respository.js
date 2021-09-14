@@ -2,10 +2,10 @@ import { client } from "./db.connection.js";
 
 function create(application) {
   return client.queryObject(
-    "INSERT INTO applications (name, type, registration_date) VALUES ($1, $2, $3, $4)",
+    "INSERT INTO applications (name, type, created_at) VALUES ($1, $2, $3, $4)",
     application.name,
     application.type,
-    application.registration_date
+    application.created_at
   );
 }
 
