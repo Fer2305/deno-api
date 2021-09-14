@@ -1,9 +1,7 @@
 import { Router } from "../dependencies/oak.js";
-
+import { ApplicationController } from "../controllers/controllers.js";
 const ApplicationRouter = new Router();
 
-ApplicationRouter.get("/application", (ctx) => {
-  ctx.response.body = "Hello World from Deno!";
-});
+ApplicationRouter.get("/applications", ApplicationController.getAllApps);
 
 export { ApplicationRouter };
