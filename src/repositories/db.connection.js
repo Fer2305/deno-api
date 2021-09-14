@@ -1,10 +1,10 @@
 import { Client } from "../dependencies/deno-postgres.js";
 
 const client = new Client({
-  user: "notifications",
-  database: "notificationsdev",
+  user: "deno",
+  database: "denotechtalk",
   hostname: "pgdev.cfxwd2oauf8n.us-east-1.rds.amazonaws.com",
-  password: "wH09zeruFF",
+  password: "Asp128..",
   port: 5432,
 });
 
