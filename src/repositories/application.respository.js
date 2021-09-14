@@ -1,4 +1,4 @@
-import { client } from "./connection.js";
+import { client } from "./db.connection.js";
 
 function create(application) {
   return client.queryObject(
@@ -33,4 +33,4 @@ function removeById(id) {
   return client.queryObject(`DELETE FROM applications WHERE id = $1`, id);
 }
 
-export { create, findAll, findById, removeById, updateById };
+export default { create, findAll, findById, removeById, updateById };

@@ -1,10 +1,7 @@
-import {
-  create,
-  findAll,
-  findById,
-  removeById,
-  updateById,
-} from "../repositories/application.respository.js";
+import { ApplicationRespository } from "../repositories/respositories.js";
+
+const { create, findAll, findById, removeById, updateById } =
+  ApplicationRespository;
 
 const getAllApps = async () => {
   const apps = await findAll();
