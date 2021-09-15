@@ -17,7 +17,10 @@ The external modules are located at src/dependencies
 
 Also you need to install velociraptor to manage scripts
 
-- [velociraptor] (deno install -fqAn vr https://x.nest.land/velociraptor@1.2.0/cli.ts)
+- velociraptor: 
+```
+deno install -fqAn vr https://x.nest.land/velociraptor@1.2.0/cli.ts)
+```
 
 ## Steps to run this application in your computer
 
