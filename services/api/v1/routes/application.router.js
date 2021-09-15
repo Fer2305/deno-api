@@ -1,5 +1,6 @@
-import { Router } from "../dependencies/oak.js";
-import { ApplicationController } from "../controllers/controllers.js";
+import { Router } from "oak/mod.ts";
+import ApplicationController from "../controllers/application.controller.js";
+
 const ApplicationRouter = new Router();
 
 ApplicationRouter.get("/applications", ApplicationController.getAllApps);

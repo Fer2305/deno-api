@@ -1,4 +1,4 @@
-import { ApplicationRespository } from "../repositories/respositories.js";
+import ApplicationRespository from "../repositories/application.respository.js";
 
 const { create, findAll, findById, removeById, updateById } =
   ApplicationRespository;

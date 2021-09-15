@@ -15,6 +15,9 @@ The external modules are located at src/dependencies
 - [oak](https://deno.land/x/oak@v9.0.0)
 - [deno-postgres](https://deno.land/x/postgres@v0.12.0)
 
+Also you need to install velociraptor to manage scripts
+
+- [velociraptor] (deno install -fqAn vr https://x.nest.land/velociraptor@1.2.0/cli.ts)
 
 ## Steps to run this application in your computer
 
@@ -34,10 +37,5 @@ The external modules are located at src/dependencies
 - Run API
 
     ```console
-    deno run --allow-net ./src/Main.js
+    vr start
     ```
-## To do
-
-- Handle and run API with environment variables
-- Build jwt middleware
-- Build error handler middleware

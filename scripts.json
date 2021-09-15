@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "start": "deno run --allow-env --allow-read --allow-net --import-map=import_map.json ./services/api/index.js",
+        "imap": "import_map.json"
+    }
+}
