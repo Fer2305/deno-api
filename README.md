@@ -32,9 +32,6 @@ The external modules are located at src/dependencies
     ```
 ## To do
 
-- Build each service function for each repository function
-- Build each controller function for each service function
-- Build each route for each controller function
 - Handle and run API with environment variables
 - Build jwt middleware
 - Build error handler middleware
