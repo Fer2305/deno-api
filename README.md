@@ -25,6 +25,12 @@ The external modules are located at src/dependencies
     ```console
     brew install deno
     ```
+
+    - Windows: on powershell
+
+    ```console
+    iwr https://deno.land/x/install/install.ps1 -useb | iex
+    ```
 - Run API
 
     ```console
