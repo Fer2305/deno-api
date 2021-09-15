@@ -2,7 +2,7 @@ import { client } from "./db.connection.js";
 
 function create(application) {
   return client.queryObject(
-    "INSERT INTO applications (name, type, created_at) VALUES ($1, $2, $3, $4)",
+    "INSERT INTO applications (name, type, created_at) VALUES ($1, $2, $3)",
     application.name,
     application.type,
     application.created_at
@@ -13,15 +13,9 @@ function findAll() {
   return client.queryArray("SELECT * FROM applications ORDER BY id");
 }
 
-function updateById(id) {
-  const lastestApplication = findById(id);
+function updateById(id, newData) {
   let query = `UPDATE applications SET name = $1, type = $2 WHERE id = $3`;
-  const updated = client.queryObject(
-    query,
-    application.name !== undefined ? application.name : lastestApplication.name,
-    application.type !== undefined ? application.type : lastestApplication.type,
-    id
-  );
+  let updated = client.queryObject(query, newData.name, newData.type, id);
   return updated;
 }
 
