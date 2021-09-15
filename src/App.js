@@ -12,6 +12,7 @@ const start = async (host, port) => {
 
 const initMiddlewares = (app) => {
   app.use(ApplicationRouter.routes());
+  app.use(ApplicationRouter.allowedMethods());
   app.use((ctx) => {
     ctx.response.body = { message: "Deno REST API is running!" };
   });
